@@ -4,7 +4,7 @@ bool isPossible(vector<int> &stalls, int k, int mid, int n) {
     int lastPos = stalls[0];
     
     for(int i=0; i<n; i++ ){
-        
+
         if(stalls[i]-lastPos >= mid){
             cowCount++;
             if(cowCount==k)
@@ -14,6 +14,7 @@ bool isPossible(vector<int> &stalls, int k, int mid, int n) {
             lastPos = stalls[i];
         }
     }
+    
     return false;
 }
 
